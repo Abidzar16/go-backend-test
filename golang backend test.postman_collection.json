@@ -1,0 +1,372 @@
+{
+	"info": {
+		"_postman_id": "9c6f31b4-b717-43ea-93e1-7ca77794d7d6",
+		"name": "golang backend test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/daftar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\": \"testi\",\r\n    \"nik\": \"1223\",\r\n    \"no_hp\": \"112233\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/daftar",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"daftar"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/daftar",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"testi\",\r\n    \"nik\": \"1223\",\r\n    \"no_hp\": \"112233\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/daftar",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"daftar"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Sep 2023 10:34:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"no_rekening\": \"4879849558136144\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/tabung",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"no_rekening\": \"4879849558136144\",\r\n    \"nominal\": 10000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/tabung",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"tabung"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/tabung",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"no_rekening\": \"4879849558136144\",\r\n    \"nominal\": 10000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/tabung",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"tabung"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Sep 2023 10:38:43 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"saldo\": 10000\n}"
+				}
+			]
+		},
+		{
+			"name": "/tarik",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"no_rekening\": \"4879849558136144\",\r\n    \"nominal\": 5000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/tarik",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"tarik"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/tarik",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"no_rekening\": \"4879849558136144\",\r\n    \"nominal\": 5000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/tarik",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"tarik"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Sep 2023 10:54:01 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "14"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"saldo\": 5000\n}"
+				}
+			]
+		},
+		{
+			"name": "/saldo/:no_rekening",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/saldo/4879849558136144",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"saldo",
+						"4879849558136144"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/saldo/:no_rekening",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/saldo/4879849558136144",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"saldo",
+								"4879849558136144"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Sep 2023 10:57:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "14"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"saldo\": 5000\n}"
+				}
+			]
+		},
+		{
+			"name": "/mutasi/:no_rekening",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/mutasi/4879849558136144",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mutasi",
+						"4879849558136144"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/mutasi/:no_rekening",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/mutasi/4879849558136144",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mutasi",
+								"4879849558136144"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Sep 2023 10:58:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "459"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mutasi\": [\n        {\n            \"CreatedAt\": \"2023-09-27T17:38:43.572863+07:00\",\n            \"UpdatedAt\": \"2023-09-27T17:38:43.572863+07:00\",\n            \"DeletedAt\": null,\n            \"ID\": \"03064293-8a6f-42e6-8fb4-f8a23a00eceb\",\n            \"Rekening\": \"4879849558136144\",\n            \"Kode_transaksi\": \"C\",\n            \"Nominal\": 10000\n        },\n        {\n            \"CreatedAt\": \"2023-09-27T17:54:01.496221+07:00\",\n            \"UpdatedAt\": \"2023-09-27T17:54:01.496221+07:00\",\n            \"DeletedAt\": null,\n            \"ID\": \"e0e8868d-ca41-4b36-bd87-7f196e895f4b\",\n            \"Rekening\": \"4879849558136144\",\n            \"Kode_transaksi\": \"D\",\n            \"Nominal\": 5000\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
